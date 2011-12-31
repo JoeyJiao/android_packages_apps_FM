@@ -50,7 +50,7 @@ public class FmSharedPreferences {
     public static final int REGIONAL_BAND_TURKEY = 33;
     public static final int REGIONAL_BAND_UNITEDKINGDOM = 34;
     public static final int REGIONAL_BAND_UNITED_STATES = 35;
-    public static final int REGIONAL_BAND_DEFAULT = REGIONAL_BAND_NORTH_AMERICA;
+    public static final int REGIONAL_BAND_DEFAULT = REGIONAL_BAND_CHINA;
 
     private static final String LOGTAG = FMRadio.LOGTAG;
 

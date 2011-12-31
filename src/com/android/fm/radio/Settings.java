@@ -170,6 +170,7 @@ public class Settings extends PreferenceActivity implements OnSharedPreferenceCh
 	    mBluetoothBehaviour.setEntryValues(R.array.bt_exit_behaviour_values);
 	    mBluetoothBehaviour.setDialogTitle(R.string.pref_bt_behaviour_on_exit_dialog_title);
 	    mBluetoothBehaviour.setKey(BT_EXIT_BEHAVIOUR);
+	    mBluetoothBehaviour.setValueIndex(1);
 	    mBluetoothBehaviour.setTitle(R.string.pref_bt_behaviour_on_exit_title);
 	    mBluetoothBehaviour.setSummary(R.string.pref_bt_behaviour_on_exit_summary);
 	    root.addPreference(mBluetoothBehaviour);

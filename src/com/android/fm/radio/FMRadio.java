@@ -438,12 +438,12 @@ public class FMRadio extends Activity {
     private void switchToSpeaker() {
         AudioSystem.setForceUse(AudioSystem.FOR_MEDIA, AudioSystem.FORCE_SPEAKER);
         AudioSystem.setDeviceConnectionState(AudioSystem.DEVICE_OUT_FM, AudioSystem.DEVICE_STATE_UNAVAILABLE, "");
-        AudioSystem.setDeviceConnectionState(AudioSystem.DEVICE_OUT_FM, AudioSystem.DEVICE_STATE_AVAILABLE, "");
+        AudioSystem.setDeviceConnectionState(AudioSystem.DEVICE_OUT_SPEAKER, AudioSystem.DEVICE_STATE_AVAILABLE, "");
     }
 
     private void switchToHeadset() {
         AudioSystem.setForceUse(AudioSystem.FOR_MEDIA, AudioSystem.FORCE_NONE);
-        AudioSystem.setDeviceConnectionState(AudioSystem.DEVICE_OUT_FM, AudioSystem.DEVICE_STATE_UNAVAILABLE, "");
+        AudioSystem.setDeviceConnectionState(AudioSystem.DEVICE_OUT_SPEAKER, AudioSystem.DEVICE_STATE_UNAVAILABLE, "");
         AudioSystem.setDeviceConnectionState(AudioSystem.DEVICE_OUT_FM, AudioSystem.DEVICE_STATE_AVAILABLE, "");
     }
 
@@ -643,7 +643,7 @@ public class FMRadio extends Activity {
                 e.printStackTrace();
             }
         }
-        Log.e(LOGTAG, "isAntennaAvailable: " + bAvailable);
+        Log.d(LOGTAG, "isAntennaAvailable: " + bAvailable);
         return bAvailable;
     }
 
